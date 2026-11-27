@@ -1,0 +1,31 @@
+{
+  "name": "composite-domain-part",
+  "version": "1.0.0",
+  "description": "This composite part deploys to an existing Cloudflare Worker — the worker must already be registered with the composite domain central registry, which manages domain routing and provisions a placeholder worker. Deploying this part replaces that placeholder with the actual intended content.",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "type": "module",
+  "scripts": {
+    "build": "vite build",
+    "pre-deploy": "bin/create-worker",
+    "deploy": "wrangler deploy",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tracerview/composite-domain-part.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tracerview/composite-domain-part/issues"
+  },
+  "homepage": "https://github.com/tracerview/composite-domain-part#readme",
+  "devDependencies": {
+    "vite": "^8.3.8",
+    "wrangler": "^4.168.0"
+  }
+}

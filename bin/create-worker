@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
+
+# shellcheck disable=SC1091
+source "$ROOT/.cdp"
+
+WORKER_NAME="cp-${CDP_LOGICAL_NAME}-${CDP_WORKER_CFOPS_SUFFIX}"
+
+printf "%s\n\n" "$WORKER_NAME" | cfops worker --create

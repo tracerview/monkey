@@ -1,0 +1,15 @@
+<html>
+<body>
+<pre id="cdpSpec"></pre>
+<script>
+  const data = {
+    compositeDomainPart: {
+      logicalName: "${cdpLogicalName}",
+      contentPath: "./${distDest}/index.html"
+    }
+  }
+  document.getElementById('cdpSpec').innerHTML = JSON.stringify(data, null, 2)
+    .replace(/"(\.\/[^"]+)"/g, '"<a href="$1">$1</a>"')
+</script>
+</body>
+</html>

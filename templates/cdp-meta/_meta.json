@@ -1,0 +1,5 @@
+{
+  "name": "${cdpLogicalName}",
+  "version": "${version}",
+  "date": "${date}"
+}
