@@ -1,4 +1,4 @@
-# Composite Domain Part (TEMPLATE:DOMAIN/PART)
+# Composite Domain Part (tracerview/monkey)
 
 This is a composite domain part that belongs to a [composite domain](https://github.com/ctracey/composite-domain).
 
